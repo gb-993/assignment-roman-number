@@ -25,6 +25,14 @@ public class RomanPrinter {
         String[] x = {" __   __ ", " \\ \\ / / ", "  \\ V /  ",
                 "   > <   ", "  / . \\  ", " /_/ \\_\\ "};
 
+        // lettera L
+        String[] l = {"  _      ", " | |     ", " | |     ",
+                " | |     ", " | |____ ", " |______|"};
+
+        // lettera C
+        String[] c = {"   _____ ", "  / ____|", " | |     ",
+                " | |     ", " | |____ ", "  \\_____|"};
+
         if (romanNumber != null) {
             for (int j = 0; j < 6; j++) {
                 for (int k = 0; k < romanNumber.length(); k++) {
@@ -35,6 +43,10 @@ public class RomanPrinter {
                         result = result.concat(v[j]);
                     } else if (letter == 'X') {
                         result = result.concat(x[j]);
+                    } else if (letter == 'L') {
+                        result = result.concat(l[j]);
+                    } else if (letter == 'C') {
+                        result = result.concat(c[j]);
                     }
                 }
                 result = result.concat("\n");
