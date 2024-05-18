@@ -13,7 +13,7 @@ public class IntegerToRomanTest {
     public void NullTest() {
         assertNull(IntegerToRoman.convert(-2));
         assertNull(IntegerToRoman.convert(0));
-        assertNull(IntegerToRoman.convert(25));
+        assertNull(IntegerToRoman.convert(173));
     }
 
 
@@ -22,6 +22,13 @@ public class IntegerToRomanTest {
         assertEquals("II", IntegerToRoman.convert(2));
         assertEquals("V", IntegerToRoman.convert(5));
         assertEquals("VIII", IntegerToRoman.convert(8));
+        assertEquals("XI", IntegerToRoman.convert(11));
+        assertEquals("XXXVI", IntegerToRoman.convert(36));
+        assertEquals("LVII", IntegerToRoman.convert(57));
+        assertEquals("LXII", IntegerToRoman.convert(62));
+        assertEquals("LXXIX", IntegerToRoman.convert(79));
+        assertEquals("LXXXV", IntegerToRoman.convert(85));
+        assertEquals("XCIX", IntegerToRoman.convert(99));
     }
 
 }
