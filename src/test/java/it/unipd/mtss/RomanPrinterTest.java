@@ -13,7 +13,7 @@ public class RomanPrinterTest {
     public void NullTest() {
         assertNull(RomanPrinter.print(-8));
         assertNull(RomanPrinter.print(0));
-        assertNull(RomanPrinter.print(183));
+        assertNull(RomanPrinter.print(1830));
     }
     @Test
     public void NumbersTest() {
